@@ -53,7 +53,7 @@ final class BundleController extends BaseController {
 
         // Sample log message
         $id = $request->getAttribute('route')->getArgument('id');
-        $this->logger->info('GET /orders/' . $id . '/products route');
+        $this->logger->info('GET /bundles/' . $id . '/products route');
 
         try {
             $product = $this->orderRepository->getProductsById($id);
