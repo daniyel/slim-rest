@@ -54,8 +54,6 @@ final class UserModel extends BaseModel {
 
             $roles = [];
 
-            var_dump($stmt->fetch());
-
             while($row = $stmt->fetch()) {
                 var_dump($row);
                 var_dump($id);
